@@ -1,7 +1,11 @@
 <?php 
     $number = 5;
     $name = "bob";
-    $users = ["Ahmed", "Jean", "Michael"]
+    $users = ["Ahmed", "Jean", "Michael"];
+    $tableau_associatif = [
+        "nom" => "Jean",
+        "age" => 30
+    ]
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,5 +17,12 @@
 </head>
 <body>
     <h1><?= "Le nombre de $name vaut $number"; ?></h1>
+    <p>
+        <?php echo "Le meilleur ami de $name est $users[1]"; ?>
+    </p>
+
+    <p>
+        <?php echo "Le meilleur ami de $tableau_associatif[nom] a $tableau_associatif[age] ans."; ?>
+    </p>
 </body>
 </html>
