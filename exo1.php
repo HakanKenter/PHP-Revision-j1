@@ -1,3 +1,8 @@
+<?php 
+    $number = 5;
+    $name = "bob";
+    $users = ["Ahmed", "Jean", "Michael"]
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +12,6 @@
     <title>Exo 1</title>
 </head>
 <body>
-    
+    <h1><?= "Le nombre de $name vaut $number"; ?></h1>
 </body>
 </html>
