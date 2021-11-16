@@ -1,0 +1,8 @@
+.MainHeader { display: flex; justify-content: space-between; align-items: center; margin: 0 10px;}
+.MainHeader__Title { margin: 0;}
+
+.MainNav {}
+.MainNav > ul { display: flex; margin: 0; align-items: center;}
+.MainNav__Item { list-style-type: none; margin-left: 10px; }
+
+.MainFooter {display: flex; justify-content: center;}
