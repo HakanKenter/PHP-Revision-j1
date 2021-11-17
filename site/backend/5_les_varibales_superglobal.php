@@ -34,6 +34,19 @@ if( !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {};
  * FILTER
  * ################## */
 
+// Échapper les caractère interprétable
 htmlentities($_POST['firstname'], ENT_QUOTES);
 escapeshellcmd($_POST['commande']);
 // mysqli_real_escape_string : Pour faire ça a des données envoyée en bases de donnée
+
+// Convertir les type
+
+intval($_POST['age']);
+floatval($_POST['size']);
+boolval($_POST['subscriber']);
+
+// Assurer la cohérence 
+strtolower( $_POST['firstname'] );
+strtoupper( $_POST['firstname'] );
+trim( $_POST['firstname'] );
+
