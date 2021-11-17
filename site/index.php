@@ -5,4 +5,4 @@ $page_name = "Accueil";
     <p>Accueil</p>
 <?php
 $content = ob_get_clean();
-include("layouts/base_layout.php"); 
+include("layouts/home_layout.php"); 

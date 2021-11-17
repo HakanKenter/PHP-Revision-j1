@@ -1,0 +1,7 @@
+<?php
+
+/**#############
+ * # LES VARIABLES SUPERGLOBALES
+ *##############*/
+
+ 

@@ -6,3 +6,10 @@
 .MainNav__Item { list-style-type: none; margin-left: 10px; }
 
 .MainFooter {display: flex; justify-content: center;}
+
+.Banner {height: 300px; display: flex;}
+
+.ContactForm { display: flex; flex-direction: column; width: 300px;}
+.ContactForm__Line { display: flex; }
+.ContactForm .email { margin: 10px 0px; }
+.ContactForm__Line > input { width: 100%; }
