@@ -1,20 +1,8 @@
 <?php
     $page_name = "About";
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <?php include("partials/head.php"); ?>
-</head>
-<body>
-
-    <?php include('partials/header.php'); ?>
-
-    <div class="Content">
-        À Propos
-    </div>
-
-    <?php include('partials/Footer.php') ?>
-</body>
-</html>
+<?php ob_start(); ?>
+    <p>À Propos</p>
+<?php
+$content = ob_get_clean();
+include("layouts/base_layout.php"); 
