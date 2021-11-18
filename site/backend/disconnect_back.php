@@ -3,5 +3,5 @@ session_start();
 session_destroy();
 
 // Redirection
-header('Location: /php/site');
+header('Location: /php/site/login.php');
 ?>
