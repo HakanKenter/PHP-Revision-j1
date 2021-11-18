@@ -26,7 +26,7 @@ session_start();
 $_SESSION['variable'] = 'valeur';
 
 // Vous pouvez y acceder comme ceci
-echo $_SESSION['variable'];
+echo $_SESSION['variable']; 
 
 // Pour la supprimer vous devez appeler session_destroy()
 session_destroy();
