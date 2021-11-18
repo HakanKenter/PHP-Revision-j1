@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     $page_name = "Contact";
 ?>
 <?php ob_start(); ?>

@@ -1,4 +1,8 @@
 <?php 
+function error($msg) {
+    echo $msg;
+    die;
+}
 
 // Déclarer une fonction "array empty"
 // qui prend un tableau, et un tableau de clé

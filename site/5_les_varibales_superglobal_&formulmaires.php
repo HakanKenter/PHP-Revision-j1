@@ -13,6 +13,28 @@ var_dump( $_GET );
 echo $_POST['email'];
 
 /**##################
+ * # LES SESSIONS
+ * ################## */
+
+// Pour sauvegarder une variable d'une page à l'autre,
+// vous pouvez utiliser une session.
+
+// Les sessions doivent être initialisées avec session_start()
+session_start();
+
+//Vous pouvez assigner une sessions cmme ceci
+$_SESSION['variable'] = 'valeur';
+
+// Vous pouvez y acceder comme ceci
+echo $_SESSION['variable'];
+
+// Pour la supprimer vous devez appeler session_destroy()
+session_destroy();
+
+// les variables de session ne sont plus accessible.
+isset($_SESSION['variables']); // retourne false
+
+/**##################
  * étape 1.
  * VÉRIFIER L'EXISTENCE
  * DES CHAMPS OBLIGATOIRES

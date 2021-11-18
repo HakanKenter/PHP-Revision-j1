@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $page_name = "About";
 ?>
 <?php ob_start(); ?>
