@@ -1,7 +1,9 @@
 <?php 
-function error($msg) {
-    echo $msg;
-    die;
+
+function error($msg, $url) {
+    $_SESSION['error'] = $msg;
+    header("Location: $url");
+    die();
 }
 
 // Déclarer une fonction "array empty"

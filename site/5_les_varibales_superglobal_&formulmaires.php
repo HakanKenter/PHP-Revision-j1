@@ -28,6 +28,9 @@ $_SESSION['variable'] = 'valeur';
 // Vous pouvez y acceder comme ceci
 echo $_SESSION['variable']; 
 
+// Vous pouvez supprmier une clé de votre session avec unset()
+unset($_SESSION['error']);
+
 // Pour la supprimer vous devez appeler session_destroy()
 session_destroy();
 
@@ -71,4 +74,13 @@ boolval($_POST['subscriber']);
 strtolower( $_POST['firstname'] );
 strtoupper( $_POST['firstname'] );
 trim( $_POST['firstname'] );
+
+
+/**##################
+ * étape 4.
+ * REDIRECTION
+ * ################## */
+
+header("Location: /lien");
+
 

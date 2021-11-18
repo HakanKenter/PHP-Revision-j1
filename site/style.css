@@ -13,3 +13,5 @@
 .ContactForm__Line { display: flex; }
 .ContactForm .email { margin: 10px 0px; }
 .ContactForm__Line > input { width: 100%; }
+
+.Error  { border: 1px solid red; background: white; padding: 5px; margin-bottom: 10px;}
