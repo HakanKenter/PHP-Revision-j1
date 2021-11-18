@@ -29,7 +29,7 @@ if( !strlen_between($confirm, 6, 32)) {
 // Lire le fichier
 // On récupère les infos du fichier en json
 $json = file_get_contents('../data/users.json', true);
-// On vérifie qu'il s'est bein ouvert
+// On vérifie qu'il s'est bien ouvert
 if( $json === false ) {
     error(ERR_INTERNAL, '/php/site/register.php');
 }
@@ -51,7 +51,7 @@ foreach($users as $user) {
     } 
 }
 
-// On l'ajout à n"otre tableau d'utilisateur (array_push)
+// On l'ajout à notre tableau d'utilisateur (array_push)
 array_push($users, [
     "username" => $username,
     "password" => $password

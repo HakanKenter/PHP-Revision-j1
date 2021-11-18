@@ -15,8 +15,6 @@
     </form>
     <p class="RegisterMsg">Pas encore inscrit ? </p> <a class="RegisterMsg" href="/php/site/register.php">Créer un compte</a>
 <?php
-if(isset($_SESSION['error'])) {
-    unset($_SESSION['error']);
-}
+unset($_SESSION['error']);
 $content = ob_get_clean();
 include("layouts/base_layout.php"); 

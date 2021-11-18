@@ -21,7 +21,7 @@ $password = $_POST['password'];
 
 // Traitement
 // On récupère les infos du fichier en json
-$users = file_get_contents('../data/user.json', true);
+$users = file_get_contents('../data/users.json', true);
 
 // On décode le JSON récuperé
 $users_decode = json_decode($users, true);
@@ -32,15 +32,15 @@ foreach($users_decode as $user) {
     // Vérififier l'identifiant & le mdp
     if( $username === $user['username'] && $password === $user['password']) {
         $is_logged = true;
+        // Se connecter
         break;
-    }
+    } 
 }
 
 if(!$is_logged){
     error(ERR_BADID, '/php/site/login.php');
 }
 
-// Se connecter
 $_SESSION['is_logged'] = true;
 $_SESSION['username'] = $user['username'];
 

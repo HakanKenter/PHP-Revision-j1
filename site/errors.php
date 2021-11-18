@@ -7,3 +7,5 @@ define("ERR_PASSWORD", "Mot de passe trop faible.");
 define("ERR_CONFIRM", "Les mots de passe ne correspondent pas.");
 define("ERR_INTERNAL", "Problème interne.");
 define("ERR_AEXIST", "Nom d'utilisateur déjà existant.");
+define("ERR_CONTACT", "Une erreur dans l'envoi du message.");
+define("ERR_ADD", "Erreur dans l'ajout de image.");
