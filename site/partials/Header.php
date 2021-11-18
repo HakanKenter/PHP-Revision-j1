@@ -11,6 +11,7 @@
                 <li class="MainNav__Item"><a href="/php/site/backend/disconnect_back.php">Se déconnecter</a></li>
                 <?php else: ?>
                 <li class="MainNav__Item"><a href="/php/site/login.php">Se connecter</a></li>
+                <li class="MainNav__Item"><a href="/php/site/register.php">S'inscrire</a></li>
                 <?php endif; ?>
             </ul>
         </nav>

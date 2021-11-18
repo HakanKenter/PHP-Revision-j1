@@ -1,9 +1,9 @@
 <?php
 session_start();
 
+require('../errors.php');
 require('../functions.php');
 
-define("ERR_BADID", "Nom d'utilisateur ou mot de passe incorrect.");
 
 // Vérifier que les champs obligatoire existent
 if( array_contains($_POST, ['username', 'password'])) { 

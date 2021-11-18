@@ -3,7 +3,6 @@
     $page_name = "Se Connecter";
 ?>
 <?php ob_start(); ?>
-    <h2>Contactez-nous</h2>
     <?php if(!empty($_SESSION['error'])): ?>
         <div class="Error">
             <p><?= $_SESSION['error']; ?></p>
@@ -14,6 +13,7 @@
         <input class="password" type="password" name="password" placeholder="Mot de passe" required>
         <button type="submit">Envoyer</button>
     </form>
+    <p class="RegisterMsg">Pas encore inscrit ? </p> <a class="RegisterMsg" href="/php/site/register.php">Créer un compte</a>
 <?php
 if(isset($_SESSION['error'])) {
     unset($_SESSION['error']);

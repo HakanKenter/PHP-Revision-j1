@@ -9,9 +9,14 @@
 
 .Banner {height: 300px; display: flex;}
 
-.ContactForm { display: flex; flex-direction: column; width: 300px;}
+.ContactForm { display: flex; flex-direction: column; width: 300px; margin-bottom: 10px;}
 .ContactForm__Line { display: flex; }
 .ContactForm .email { margin: 10px 0px; }
 .ContactForm__Line > input { width: 100%; }
 
 .Error  { border: 1px solid red; background: white; padding: 5px; margin-bottom: 10px;}
+
+.RegisterForm { display: flex; flex-direction: column; width: 300px; margin-bottom: 10px; }
+.RegisterForm > input { margin: 5px 0; }
+.RegisterMsg { font-style: italic; color: blue; display: inline-block;}
+
